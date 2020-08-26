@@ -1,0 +1,461 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap);/*font-family: 'Poppins', sans-serif;*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+    vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ----------------------my stuff here---------------------- */
+*{
+    /* border:1px solid grey;   */
+
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(250, 250, 250);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    width: 100%;
+    border-bottom: 1px solid rgba(105, 105, 105, 0.1);
+}
+header *{
+    margin: 1% 0;
+}
+header #logo{
+    display: flex;
+    margin-left: 1%;
+    width: 9%;
+}
+header #logo img{
+    width: 50%;
+}
+header #navbar{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    width: 90%;
+}
+header #navbar a{
+    width: 10%;
+    font-size: 1.6rem;
+    margin: 0 2%;
+    text-align: center;
+    border: 4px solid#FF5A5F;
+    border-radius: 20px;
+    padding: 0.5% 0;
+    text-decoration: none;
+    color: #FF5A5F;
+    transition: all .3s ease-in-out;
+    
+}
+header #navbar #last{
+    background-color: #FF5A5F;
+    color: white;
+}
+header #navbar #last:hover{
+    background-color: #eb5358;
+    color: white;
+    border: 4px solid#eb5358;
+}
+header #navbar a:hover{
+    background: #FF5A5F;;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+#big-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(105, 105, 105, 0.1);
+    width: 80%;
+}
+
+/* top section */
+#top {
+    display: flex;
+    margin: 2% 0;
+    width: 80%;
+    align-items: center;
+    padding: 1.5% 0;
+}
+#top img{
+    width: 80%;
+}
+#top-welcome{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    margin-left: -15%;
+    background-color: rgb(250, 250, 250);
+    border-bottom: 4px solid rgba(105, 105, 105, 0.1);
+    border-right: 4px solid rgba(105, 105, 105, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    padding: 3%;
+
+}
+#top-welcome h1{
+    font-size: 5vw;
+    text-align: center;
+    color: black;
+}
+#top-welcome p{
+    font-size: 0.9vw;
+    margin: 5% 0;
+    line-height: 1.3;
+}
+#top-welcome a{
+    width: 80%;
+    margin: 1% 2%;
+    text-align: center;
+    border: 4px solid#FF5A5F;;
+    border-radius: 10px;
+    padding: 0.5% 0;
+    text-decoration: none;
+    color: #FF5A5F;
+    transition: all .3s ease-in-out;
+    font-size: 1.2vw;
+    padding: 2% 0;
+    
+}
+#top-welcome a:hover{
+    background: #FF5A5F;;
+    color: white;
+    border: 4px solid white;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+/* product description */
+#product-description{
+    display: flex;
+    align-items: center;
+    padding: 2% 0;
+}
+#product-description h3{
+    font-size: 4rem;
+    border-right: 1px solid rgba(105, 105, 105, 0.1);
+    padding-right: 5%;
+    line-height: 1.2;
+}
+#product-description p{
+    font-size: 1.8rem;
+    line-height: 2;
+    padding-left: 2%;
+}
+
+/* list section */
+#feature-set {
+    display: flex;
+    font-size: 3rem;
+    justify-content: space-around;
+}
+#feature-set div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    border-bottom: 4px solid rgba(105, 105, 105, 0.1);
+    border-right: 4px solid rgba(105, 105, 105, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    justify-content: baseline   ;    
+    padding: 2% 0;
+    margin: 5% 0;
+}
+#feature-set img{
+    width: 10rem; 
+    height: 10rem;
+}
+#feature-set h3{
+    margin: 5% 0;
+    color: #FF5A5F;
+
+}
+#feature-set p{
+    font-size: 1.6rem;
+    width: 80%;
+    line-height: 1.3;
+}
+/* footer section */
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-content: center;
+    padding: 2% 0;
+    border-top: 1px solid rgba(105, 105, 105, 0.1);
+    background-color: #ff5a6010;
+    margin-top: auto;
+    /* font-size: 2em; */
+
+}
+
+
+@media (max-width: 800px) {
+    header{ 
+        width: 100%;
+    }
+    header #navbar a{
+        font-size: 1.2rem;
+        border: 2px solid #FF5A5F;
+    }
+    #top-landing{
+        padding-bottom: 10%;
+    }
+    #top{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 90%;
+        margin-top: 8%;
+    }
+    #top h1{
+        font-size: 8rem;
+    }
+    #top div{
+        width:100%;
+        max-height: 200px;
+        margin: 0;
+        border: 0;
+    }
+    #top p{
+        font-size: 1.4rem;
+        width: 90%;
+
+    }
+    #top a{
+        width: 50%;
+        font-size: 1.2rem;
+    }
+    #top-welcome p{
+        line-height: 2;
+    }
+    #product-description{
+        flex-direction: column;
+        text-align: center;
+    }
+    #product-description h3{
+        border-right: 0;
+        margin: 5% 0 5% 0;
+    }
+    #product-description p{
+        flex-direction: column;
+        text-align: left;
+        font-size: 1.6rem;
+    }
+    #feature-set div{
+        width: 30%;
+    }
+    #feature-set h3{
+        margin: 15% 0;
+        border-right: 0;
+        font-size: 1.4rem;
+    }
+    #feature-set p{
+        font-size: 1.2rem;
+    }
+    #feature-set img{
+        width: 5rem;
+        height: 5rem;
+    }
+    #feature-set{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 500px){
+    #top{
+        margin-bottom: 15%;
+    }
+    
+}
+/*-------------------------------  about.html  -----------------------------------*/
+#top-about{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    border-bottom: 1px solid rgba(105, 105, 105, 0.1);
+    text-align: center;
+    padding: 3%;
+}
+#top-about h2{
+    font-size: 5vw;
+    text-align: center;
+    color: black;
+}
+#team{
+    display: flex;
+    padding: 1% 0;
+    font-size: 3rem;
+    width: 86%;
+    
+}
+#team p{
+    font-size: 1.5rem;
+    color: #FF5A5F;
+}
+#team-title{
+    width: 8%;
+}
+
+#team-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 85%;
+    border-left: 1px solid rgba(105, 105, 105, 0.1);
+}
+#team-list div{
+    width: 20%;
+    border-bottom: 4px solid rgba(105, 105, 105, 0.1);
+    border-right: 4px solid rgba(105, 105, 105, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    padding: 3%;
+    margin: 2%;
+}
+#team-list img{
+    width: 80%;
+    border-radius: 20px;
+}
+#mission {
+    display: flex;
+    padding: 1% 0;
+    font-size: 3rem;
+    flex-wrap: wrap;
+    border-bottom: 0;
+    width: 86%;
+    padding: 2% 0;
+}
+#mission-title{
+    width: 10%;
+    padding-left: 2%;
+}
+#mission-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 85%;
+    border-right: 1px solid rgba(105, 105, 105, 0.1);
+    font-size: 1.6rem;
+    line-height: 2;
+    padding-right: 2%;
+}
+
+@media (max-width: 800px) {
+    #top-about{
+        width: 85%;
+    }
+    #top div{
+        width:100%;
+        max-height: 200px;
+        margin: 0;
+        border: 0;
+    }
+    #top a{
+        width: 50%;
+        font-size: 1.2rem;
+    }
+    #mission-title, #team-title{
+        font-size: 1.6rem;
+        text-align: center;
+        width: 40%;
+        padding: 0;
+    }
+    #team{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 90%;
+        align-items: center;
+    }
+    #team p{
+        font-size: 1rem;
+    }
+    #team-title{
+        width: 30%;
+    }
+    #team-title div{
+        display: flex;
+        justify-content: center;
+        width: 40%;
+    }
+    #team-list{
+        font-size: 1.2rem;
+        border: 0;
+        width: 100%
+    }
+    #team-list div{
+        width: 20%   
+    }
+    #team-list img{
+        width: 80%;
+        border-radius: 10px;
+    }
+    #mission-title{
+        margin-bottom: 2%;
+    }
+    #mission-content{
+        display: flex;
+        border: 0;
+        order: 1;
+    }
+    #mission-content p{
+        font-size: 1.2rem;
+        line-height: 1.5;
+        width: 100%;
+        text-align: left;
+    }
+}
